@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import BottomLeft from "./charts/bottomleft/bottomright";
+import BottomRight from "./charts/bottomright/bottomright";
+import TopLeft from "./charts/topLeft/topLeft";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <TopLeft />
+      {/* <BottomRight /> */}
+      {/* <BottomLeft /> */}
+    </React.Fragment>
   );
 }
 
